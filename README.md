@@ -251,7 +251,7 @@ default, you must create it manually.
     },
     "general": {
         "apps": {
-            "terminal": ["foot"],
+            "terminal": ["kitty"],
             "audio": ["pavucontrol"],
             "playback": ["mpv"],
             "explorer": ["thunar"]
