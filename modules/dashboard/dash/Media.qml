@@ -213,11 +213,7 @@ Item {
         anchors.margins: Appearance.padding.large * 2
 
         playing: Players.active?.isPlaying ?? false
-<<<<<<< HEAD
-        speed: Audio.beatTracker.bpm / 160
-=======
         speed: Audio.beatTracker.bpm / Appearance.anim.mediaGifSpeedAdjustment
->>>>>>> 7a41a85954a40366bd25ed4e33d1cd9146507ad4
         source: Paths.absolutePath(Config.paths.mediaGif)
         asynchronous: true
         fillMode: AnimatedImage.PreserveAspectFit

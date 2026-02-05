@@ -217,7 +217,7 @@ Item {
                 font.pointSize: Math.round(Appearance.font.size.large * 1.5)
                 disabled: !Players.active?.canGoPrevious
                 onClicked: Players.active?.previous()
-            }
+             }
 
             PlayerControl {
                 icon: Players.active?.isPlaying ? "pause" : "play_arrow"
@@ -228,7 +228,7 @@ Item {
                 font.pointSize: Math.round(Appearance.font.size.large * 1.5)
                 disabled: !Players.active?.canTogglePlaying
                 onClicked: Players.active?.togglePlaying()
-            }
+           }
 
             PlayerControl {
                 type: IconButton.Text
@@ -380,11 +380,7 @@ Item {
             height: visualiser.height * 0.75
 
             playing: Players.active?.isPlaying ?? false
-<<<<<<< HEAD
-            speed: Audio.beatTracker.bpm / 160
-=======
             speed: Audio.beatTracker.bpm / Appearance.anim.mediaGifSpeedAdjustment
->>>>>>> 7a41a85954a40366bd25ed4e33d1cd9146507ad4
             source: Paths.absolutePath(Config.paths.mediaGif)
             asynchronous: true
             fillMode: AnimatedImage.PreserveAspectFit
